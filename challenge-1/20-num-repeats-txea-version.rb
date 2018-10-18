@@ -6,8 +6,6 @@
 
 def num_repeats(string)
 
-count = 0
-
 i = 0
 
 minor_bag = []
@@ -19,7 +17,6 @@ while i < string.length
   while j <= string.length
 
     if string[i] == string[j]
-      count += 1
       unless minor_bag.include?(string[j])
           minor_bag.push(string[j])
       end
@@ -39,11 +36,9 @@ while i < string.length
     # compare j to the next index up until the current j value
       k = 0 # This will refer to the first letter/index in the original string
 
-      previous_count = 0
 
       while k < j
         if string[j] == string[k]
-          previous_count += 1
           # store the letter somewhere
           unless minor_bag.include?(string[k])
             minor_bag.push(string[k])

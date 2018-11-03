@@ -55,7 +55,7 @@ def caesar_cipher(offset, string)
     if character == " "
       new_string += character
     end
-  # Should only execute if current chaacter is not a space
+  # Should only execute if current character is not a space
 
     unless character == " "
       new_ascii_code = character.ord + offset

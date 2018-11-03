@@ -4,7 +4,7 @@
 
 def consecutive_string_count(string)
 
-  # Question: return the sequentialial count of similar characters in a string
+  # Question: return the sequential count of similar characters in a string
   # Keyword is sequential and count, the count is very important!
 
   # Loop over the string scanning each individual character
